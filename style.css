@@ -182,3 +182,33 @@ header nav ul li:hover{
   padding: 15px 30px;
   background: transparent;
 }
+.container{
+  margin-top: 100px;
+  margin-left: 150px;
+  background-color: red;
+  width: 1140px;
+  height: 300px;
+}
+.container .headText{
+  font-size: 24px;
+  font-weight: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+.container .icons{
+  padding-top: 66px;
+  /*padding: 0 250px 0 85px;*/
+  display: flex;
+  justify-content: space-around;
+}
+.container .loremIpsum{
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .loremIpsum .loremIpsum1,
+.loremIpsum2,
+.loremIpsum3{
+  width: 268px;
+}
