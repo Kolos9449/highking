@@ -108,23 +108,23 @@ button, input[type="submit"], input[type="reset"] {
 /* Голова */
 header{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+  max-width: 1240px;
+  margin: auto;
   height: 126px;
 }
 .headerLogo{
   cursor: pointer;
-  margin-left: 151px;
-  margin-top: 43px;
   width: 127px;
   height: 40px;
 }
 
 header nav{
   opacity: 50%;
-  margin-right: 50px;
-  margin-top: 43px;
-  padding-left: 500px;
   width: 100%;
+  max-width: 700px;
 }
 header nav ul{
   display: flex;
@@ -138,8 +138,13 @@ header nav ul li:hover{
   color: black;
 }
 /* Верхний блок */
+
+.layout {
+  max-width: 1240px;
+  margin: auto;
+}
+
 .upper .mainContent{
-  margin-left: 110px;
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
@@ -185,33 +190,45 @@ header nav ul li:hover{
 }
 .upper .container{
   margin-top: 100px;
-  margin-left: 150px;
-  background-color: white;
-  width: 1140px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: palevioletred;
   height: 300px;
+  padding: 30px 50px;
 }
-.upper .container .headText{
+.container li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 268px;
+}
+.container li img {
+  width: 76px;
+  height: 76px;
+}
+/*.upper .container .headText{
   font-size: 24px;
   font-weight: 600px;
   display: flex;
   justify-content: space-around;
-}
-.upper .container .icons{
+}*/
+/*.upper .container .icons{
   padding-top: 66px;
-  /*padding: 0 250px 0 85px;*/
+  !*padding: 0 250px 0 85px;*!
   display: flex;
   justify-content: space-around;
-}
-.upper .container ul{
+}*/
+/*.upper .container ul{
   list-style: none;
   font-size: 18px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-}
-.upper .container ul li{
+}*/
+/*.upper .container ul li{
   width: 268px;
-}
+}*/
 /* Средняя часть */
 .middle{
   background-color: white;
