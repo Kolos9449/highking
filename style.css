@@ -23,7 +23,6 @@ body {
     /* line-height:1; */
     font-family: 'Poppins', sans-serif;
     color: #525252;
-    background-color: #E5E5E5;
     background-image: url(Assets/Background.svg)
 }
 
@@ -138,10 +137,48 @@ header nav ul li{
 header nav ul li:hover{
   color: black;
 }
-.text{
+.mainContent{
+  margin-left: 110px;
   margin-top: 100px;
-  margin-left: 150px;
-  width: 500px;
-  font-size: 52px;
+  display: flex;
+  justify-content: space-around;
+}
+.mainContent .text{
+  height: 300px;
+  color: black;
+  width: 600px;
+  font-size: 72px;
   font-weight: 600;
+}
+.text2{
+  margin: 325px 0 0 -400px;
+  position: absolute;
+  font-weight: 500;
+  width: 450px;
+  font-size: 22px;
+}
+.text2 .contact{
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 52px;
+  transition: 0.5s;
+  box-shadow: 0 4px 60px
+    rgba(62, 130, 252, 0.35);
+  color: white;
+  border-radius: 40px;
+  padding: 15px 30px;
+  background: #3E82FC;
+}
+.text2 .contact:hover{
+  transform: scale(1.1);
+}
+.text2 .watch{
+  color: #3E82FC;
+  border: 1px solid;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 52px;
+  border-radius: 40px;
+  padding: 15px 30px;
+  background: transparent;
 }
