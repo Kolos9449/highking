@@ -105,7 +105,7 @@ button, input[type="submit"], input[type="reset"] {
  cursor: pointer;
  outline: inherit;
 }
-
+/* Голова */
 header{
   display: flex;
   width: 100%;
@@ -137,27 +137,28 @@ header nav ul li{
 header nav ul li:hover{
   color: black;
 }
-.mainContent{
+/* Верхний блок */
+.upper .mainContent{
   margin-left: 110px;
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
 }
-.mainContent .text{
+.upper .mainContent .text{
   height: 300px;
   color: black;
   width: 600px;
   font-size: 72px;
   font-weight: 600;
 }
-.text2{
+.upper .mainContent .text2{
   margin: 325px 0 0 -400px;
   position: absolute;
   font-weight: 500;
   width: 450px;
   font-size: 22px;
 }
-.text2 .contact{
+.upper .mainContent .text2 .contact{
   font-weight: 600;
   font-size: 18px;
   margin-top: 52px;
@@ -169,10 +170,10 @@ header nav ul li:hover{
   padding: 15px 30px;
   background: #3E82FC;
 }
-.text2 .contact:hover{
+.upper .mainContent .text2 .contact:hover{
   transform: scale(1.1);
 }
-.text2 .watch{
+.upper .mainContent .text2 .watch{
   color: #3E82FC;
   border: 1px solid;
   font-weight: 600;
@@ -182,33 +183,50 @@ header nav ul li:hover{
   padding: 15px 30px;
   background: transparent;
 }
-.container{
+.upper .container{
   margin-top: 100px;
   margin-left: 150px;
-  background-color: red;
+  background-color: white;
   width: 1140px;
   height: 300px;
 }
-.container .headText{
+.upper .container .headText{
   font-size: 24px;
   font-weight: 600px;
   display: flex;
   justify-content: space-around;
 }
-.container .icons{
+.upper .container .icons{
   padding-top: 66px;
   /*padding: 0 250px 0 85px;*/
   display: flex;
   justify-content: space-around;
 }
-.container .loremIpsum{
+.upper .container ul{
+  list-style: none;
   font-size: 18px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.container .loremIpsum .loremIpsum1,
-.loremIpsum2,
-.loremIpsum3{
+.upper .container ul li{
   width: 268px;
+}
+/* Средняя часть */
+.middle{
+  background-color: white;
+  height: 1400px;
+  background-image: url(Assets/MID_background.svg);
+}
+.middle .images .bg1{
+  margin: 447px 150px 0 0;
+  float: right;
+}
+.middle .images .girl{
+  margin: 130px 0 0 150px;
+}
+.middle .midText{
+  color: black;
+  font-size: 62px;
+  font-weight: 600;
 }
