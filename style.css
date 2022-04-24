@@ -143,27 +143,28 @@ header nav ul li:hover{
   max-width: 1240px;
   margin: auto;
 }
-
-.upper .mainContent{
-  margin-top: 100px;
+.upper .upperContent{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.upper .mainContent .text{
+.upper .upperContent .upperText{
+  height: 662px;
+  margin-top: 100px;
+}
+.upper .upperContent .upperText .upperText1{
   height: 300px;
   color: black;
   width: 600px;
   font-size: 72px;
   font-weight: 600;
 }
-.upper .mainContent .text2{
-  margin: 325px 0 0 -400px;
-  position: absolute;
+.upper .upperContent .upperText .upperText2{
+  padding-top: 30px;
   font-weight: 500;
   width: 450px;
   font-size: 22px;
 }
-.upper .mainContent .text2 .contact{
+.upper .upperContent .upperText .buttons .contact{
   font-weight: 600;
   font-size: 18px;
   margin-top: 52px;
@@ -175,10 +176,10 @@ header nav ul li:hover{
   padding: 15px 30px;
   background: #3E82FC;
 }
-.upper .mainContent .text2 .contact:hover{
+.upper .upperContent .upperText .buttons .contact:hover{
   transform: scale(1.1);
 }
-.upper .mainContent .text2 .watch{
+.upper .upperContent .upperText .buttons .watch{
   color: #3E82FC;
   border: 1px solid;
   font-weight: 600;
@@ -188,25 +189,44 @@ header nav ul li:hover{
   padding: 15px 30px;
   background: transparent;
 }
-.upper .container{
-  margin-top: 100px;
-  list-style: none;
+.layout .upper .container{
   display: flex;
   justify-content: space-between;
-  background-color: palevioletred;
-  height: 300px;
+  list-style: none;
+  background-color: white;
   padding: 30px 50px;
 }
-.container li {
+.layout .upper .container li{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: baseline;
   max-width: 268px;
 }
-.container li img {
-  width: 76px;
-  height: 76px;
+.layout .upper .container
+.locations,
+.adventures,
+.hikers{
+  font-weight: 600;
+  font-size: 24px;
 }
+.layout .upper .container li button{
+  color: #FE2C54;
+}
+.layout .upper .container li button:hover{
+  text-decoration: underline;
+}
+.layout .info{
+  display: flex;
+  justify-content: center;
+}
+.layout .explore{
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: #FE2C54;
+}
+
+
 /*.upper .container .headText{
   font-size: 24px;
   font-weight: 600px;
@@ -232,18 +252,58 @@ header nav ul li:hover{
 /* Средняя часть */
 .middle{
   background-color: white;
-  height: 1400px;
   background-image: url(Assets/MID_background.svg);
 }
-.middle .images .bg1{
-  margin: 447px 150px 0 0;
-  float: right;
+.middle .girl{
+  height: 622px;
 }
-.middle .images .girl{
-  margin: 130px 0 0 150px;
+.middle .midContent{
+  display: flex;
+  justify-content: space-between;
 }
 .middle .midText{
+  display: flex;
+  flex-direction: column;
+}
+.middle .midText .midText1{
+  width: 508px;
   color: black;
   font-size: 62px;
   font-weight: 600;
+}
+.middle .midContent .midText .midText2{
+  width: 340px;
+}
+.middle .midContent .midText button{
+  width: 181px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 52px;
+  transition: 0.5s;
+  color: white;
+  border-radius: 40px;
+  padding: 15px 30px;
+  background: #3E82FC;
+}
+.middle .midContent .midText button:hover{
+  transform: scale(1.1);
+}
+.middle .midContainer .journey{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #3E82FC;
+}
+.middle .midContainer .trust{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
+.middle .midContainer .brands{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
