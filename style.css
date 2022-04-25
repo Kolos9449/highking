@@ -20,10 +20,12 @@ time, mark, audio, video {
 }
 
 body {
+  font-size: 18px;
+  background-image: url(Assets/MID_background.svg);
     /* line-height:1; */
     font-family: 'Poppins', sans-serif;
-    color: #525252;
-    background-image: url(Assets/Background.svg)
+    color: #5D616F;
+
 }
 
 article,aside,details,figcaption,figure,
@@ -143,30 +145,32 @@ header nav ul li:hover{
   max-width: 1240px;
   margin: auto;
 }
-.upper .upperContent{
+.upper .banner{
+  justify-content: center;
+  height: 882px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
-.upper .upperContent .upperText{
-  height: 662px;
-  margin-top: 100px;
+.upper .banner .upperContent{
+  display: flex;
 }
-.upper .upperContent .upperText .upperText1{
-  height: 300px;
+.upper .banner .upperContent .upperText{
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+}
+.upper .banner .upperContent .upperText .upperText1{
   color: black;
-  width: 600px;
   font-size: 72px;
   font-weight: 600;
 }
-.upper .upperContent .upperText .upperText2{
-  padding-top: 30px;
-  font-weight: 500;
+.upper .banner .upperContent .upperText .upperText2{
   width: 450px;
+  font-weight: 500;
   font-size: 22px;
 }
-.upper .upperContent .upperText .buttons .contact{
+.upper .banner .upperContent .upperText .buttons .contact{
   font-weight: 600;
-  font-size: 18px;
   margin-top: 52px;
   transition: 0.5s;
   box-shadow: 0 4px 60px
@@ -176,43 +180,45 @@ header nav ul li:hover{
   padding: 15px 30px;
   background: #3E82FC;
 }
-.upper .upperContent .upperText .buttons .contact:hover{
+.upper .banner .upperContent .upperText .buttons .contact:hover{
   transform: scale(1.1);
 }
-.upper .upperContent .upperText .buttons .watch{
+.upper .banner .upperContent .upperText .buttons .watch{
   color: #3E82FC;
   border: 1px solid;
   font-weight: 600;
-  font-size: 18px;
   margin-top: 52px;
   border-radius: 40px;
   padding: 15px 30px;
   background: transparent;
 }
-.layout .upper .container{
+.upper .banner .upperContent .couple{
+  height: 662px;
+}
+.upper .container{
   display: flex;
   justify-content: space-between;
   list-style: none;
   background-color: white;
   padding: 30px 50px;
 }
-.layout .upper .container li{
+.upper .container li{
   display: flex;
   flex-direction: column;
   align-items: baseline;
   max-width: 268px;
 }
-.layout .upper .container
+.upper .container
 .locations,
 .adventures,
 .hikers{
   font-weight: 600;
   font-size: 24px;
 }
-.layout .upper .container li button{
+.upper .container li button{
   color: #FE2C54;
 }
-.layout .upper .container li button:hover{
+.upper .container li button:hover{
   text-decoration: underline;
 }
 .layout .info{
@@ -241,7 +247,6 @@ header nav ul li:hover{
 }*/
 /*.upper .container ul{
   list-style: none;
-  font-size: 18px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -252,33 +257,35 @@ header nav ul li:hover{
 /* Средняя часть */
 .middle{
   background-color: white;
-  background-image: url(Assets/MID_background.svg);
 }
 .middle .girl{
   height: 622px;
 }
 .middle .midContent{
+  background-image: url(Assets/MID_background.svg);
+  align-items: center;
+  height: 882px;
   display: flex;
   justify-content: space-between;
 }
 .middle .midText{
+  justify-content: center;
+  width: 500px;
   display: flex;
   flex-direction: column;
 }
 .middle .midText .midText1{
-  width: 508px;
   color: black;
   font-size: 62px;
   font-weight: 600;
 }
 .middle .midContent .midText .midText2{
-  width: 340px;
+  font-size: 22px;
+  display: flex;
 }
 .middle .midContent .midText button{
   width: 181px;
   font-weight: 600;
-  font-size: 18px;
-  margin-top: 52px;
   transition: 0.5s;
   color: white;
   border-radius: 40px;
@@ -288,22 +295,275 @@ header nav ul li:hover{
 .middle .midContent .midText button:hover{
   transform: scale(1.1);
 }
-.middle .midContainer .journey{
+.middle .midContainer .head{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.middle .midContainer .head .journey{
   font-size: 20px;
   font-weight: 500;
   color: #3E82FC;
 }
-.middle .midContainer .trust{
-  display: flex;
-  justify-content: center;
+.middle .midContainer .head .trust{
   font-size: 40px;
   font-weight: 600;
   color: black;
 }
 .middle .midContainer .brands{
+  padding-top: 50px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.middle .midContainer .brands .brands1{
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+.middle .midContainer .brands .brands2{
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.bottom .bottomUp .bottomUpContent{
+  height: 882px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom .bottomUp .bottomUpContent .bottomUpText{
+  justify-content: center;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.bottom .bottomUp .bottomUpContent .bottomUpText .bottomUpText1{
+  font-weight: 600;
+  font-size: 62px;
+  color: black;
+}
+.bottom .bottomUp .bottomUpContent .bottomUpText .bottomUpText2{
+  display: flex;
+  font-size: 22px;
+}
+.bottom .bottomUp .bottomUpContent .bottomUpText .bottomUpText2 img{
+  height: 154px;
+}
+
+.bottom .bottomUp .bottomUpContent .bottomUpText button{
+  width: 181px;
+  margin-top: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+  color: white;
+  border-radius: 40px;
+  padding: 15px 30px;
+  background: #3E82FC;
+}
+.bottom .bottomUp .bottomUpContent .bottomUpText button:hover{
+  transform: scale(1.1);
+}
+.bottom .bottomDown .bottomDownContent{
+  height: 882px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom .bottomDown .bottomDownContent .bottomDownText{
+  justify-content: center;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.bottom .bottomDown .bottomDownContent .bottomDownText .bottomDownText1{
+  font-weight: 600;
+  font-size: 62px;
+  color: black;
+}
+.bottom .bottomDown .bottomDownContent .bottomDownText .bottomDownText2{
+  display: flex;
+  font-size: 22px;
+}
+.bottom .bottomDown .bottomDownContent .bottomDownText .bottomDownText2 img{
+  height: 163px;
+}
+.bottom .bottomDown .bottomDownContent .bottomDownText button{
+  width: 181px;
+  margin-top: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+  color: white;
+  border-radius: 40px;
+  padding: 15px 30px;
+  background: #3E82FC;
+}
+.bottom .bottomDown .bottomDownContent .bottomDownText button:hover{
+  transform: scale(1.1);
+}
+.review{
+  height: 886px;
+}
+.review .head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.review .happy{
+  font-size: 20px;
+  font-weight: 500;
+  color: #3E82FC;
+}
+.review .client{
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
+.review .comments{
+  display: flex;
+  justify-content: space-around;
+
+}
+/*.review .sideComment1{
+  margin-left: -360px;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0px 54px 104px
+    rgba(0, 0, 0, 0.04);
+  border-radius: 140px 0px;
+  background-color: white;
+  height: 394px;
+  width: 726px;
+}
+.review .sideComment1 .reviewContent{
+  width: 600px;
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}*/
+.review .centralComment{
+  justify-content: center;
+  display: flex;
+  box-shadow: 0px 54px 104px
+    rgba(0, 0, 0, 0.04);
+  border-radius: 140px 0px;
+  background-color: white;
+  height: 394px;
+  width: 726px;
+}
+.review .centralComment .reviewContent{
+  text-align: center;
+  width: 600px;
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.review .centralComment .reviewContent .name{
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+}
+.review .centralComment .reviewContent .status{
+  color: #FE2C54;
+}
+/*.review .sideComment2{
+  margin-right: -360px;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0px 54px 104px
+    rgba(0, 0, 0, 0.04);
+  border-radius: 140px 0px;
+  background-color: white;
+  height: 394px;
+  width: 726px;
+}
+.review .sideComment2 .reviewContent{
+  width: 600px;
+  list-style: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}*/
+/*.review .centralComment .commas{
+  height: 86px;
+  width: 110px;
+}*/
+.footer{
+  background-color: #ECF3FF;
+}
+.footer .subscription{
+  align-items: center;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+}
+.footer .subscription .subscriptionContent{
+  height: 334px;
+  justify-content: space-between;
+  text-align: center;
+  width: 635px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .subscription .news{
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+}
+.footer .subscription .email input{
+  background-color: #ECF3FF;
+  background-image: url(Assets/ICO_mail.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  padding-left: 65px;
+  font-size: 18px;
+  width: 448px;
+  height: 58px;
+  border: 1px solid #3E82FC;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.footer .subscription .email input::placeholder{
+  color: #3E82FC;
+}
+.footer .subscription .email button{
+  font-weight: 600;
+  margin-top: 52px;
+  transition: 0.5s;
+  box-shadow: 0 4px 60px
+    rgba(62, 130, 252, 0.35);
+  color: white;
+  border-radius: 40px;
+  padding: 15px 30px;
+  background: #3E82FC;
+}
+.footer .subscription .email button:hover{
+  transform: scale(1.1);
+}
+.footer .other{
+  height: 588px;
+}
+.footer .other .social{
+  height: 250px;
+  justify-content: space-between;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .other .social img{
+  width: 127px;
+}
+.footer .other .social ul{
+  list-style: none;
+  display: flex;
+}
+.footer .other .social ul li img{
+  padding-right: 30px;
+  width: 50px;
 }
